@@ -1,82 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spider Man | Multiverso</title>
-  <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
-</head>
+    <link rel="stylesheet" href="/assets/css/internal.css" />
 
-<body>
-  <div class="s-wrapper">
+    <!-- bootStrap -->
 
-    <video autoplay loop>
-      <source src="../../assets/videos/amazing-spiderman2-2014-trailer.mp4" type="video/mp4" />
-    </video>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
-    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
-    <div class="s-left-column">
-      <nav class="navigator">
-        <div class="navigator__icon">
-          <a href="../../index.html">
-            <img src="../../assets/images/icons/spiderman1-andrew.png" />
-          </a>
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+    <title>Spider-Man SpiderVerse</title>
+  </head>
+  <body>
+    <div class="s-wrapper">
+      <nav class="menu">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link"><a href="../../index.html">Home</a></li>
+            <li class="nav-link">
+              <a
+                href="https://www.linkedin.com/in/joão-marcos-525564226/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-logo">
+              <img src="../../assets/images/icons/spider.svg" alt="" />
+            </li>
+            <li class="nav-link">
+              <a href="https://github.com/Joaommsp" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://github.com/Joaommsp/Spider-man_SpiderVerse"
+                target="_blank"
+                >Repositório</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="spiderman1.html">01</a></li>
-          <li><a href="#02" class="active">02</a></li>
-        </ul>
       </nav>
-    </div>
-    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
 
-    <div class="s-main-content">
-      <div class="s-main-content__top">
+      <div class="s-video">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-andrew/movie-02/logo.png" alt="Spiderman 2 (2005)"
-            title="Spiderman 2 (2005)" />
+          <img
+            src="/assets/images/spiderman-andrew/movie-02/logo.png"
+            alt="Spider-Man (2012)"
+            title="Spider-Man (2012)"
+          />
         </div>
 
-        <div class="s-description">
-          <div class="pills">
+        <aside class="s-left-column">
+          <nav class="navigator">
+            <div class="navigator-icon">
+              <a href="../../index.html">
+                <img src="/assets/images/icons/spiderman1.png" alt="" />
+              </a>
+            </div>
             <ul>
-              <li>Ano: 2005</li>
-              <li>Diretor: Sam Raimi</li>
+              <li><a href="../andrew-garfield/spiderman1.html">01</a></li>
+              <li><a href="../andrew-garfield/spiderman2.html">02</a></li>
             </ul>
-          </div>
-          <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Quando uma falha na experiência de fusão nuclear resulta em uma explosão que mata sua esposa, o Dr. Otto Octavius é transformado em Dr. Octopus, um ciborgue com tentáculos de metal. Doc Ock culpa o Homem-Aranha pelo acidente e quer vingança. Enquanto isso, o alter ego do herói, Peter Parker, perde seus poderes. Para complicar as coisas, o seu melhor amigo odeia o Homem-Aranha e sua amada fica noiva..</p>
-          </div>
+          </nav>
+        </aside>
+
+        <div class="s-classification">
+          <img src="../../assets/classifications/12.png" alt="" />
         </div>
 
         <div class="s-links">
           <ul>
             <li>
-              <a href="#" class="link-button">
-                <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
-                </span>
-                <span class="label">
-                  Assistir trailer
-                </span>
+              <a
+                href="https://www.youtube.com/watch?v=PfUDLzyC1cM&pp=ygUkbyBlc3BldGFjdWxhciBob21lbSBhcmFuaGEgMiB0cmFpbGVy"
+                class="link-button"
+                target="_blank"
+              >
+                <img src="../../assets/images/icons/play.svg" alt="" />
+                <span class="label"> Assistir trailer </span>
+              </a>
+            </li>
+            <li>
+              <a href="#details" class="info-button">
+                <img src="../../assets/images/icons/info.svg" alt="" />
+                <span class="label"> Mais Informações </span>
               </a>
             </li>
           </ul>
         </div>
+
+        <div class="s-video__container">
+          <video
+            autoplay
+            loop
+            muted
+            src="../../assets/videos/amazing-spiderman2-2014-trailer.mp4"
+          ></video>
+        </div>
       </div>
 
-      <div class="s-main-content__bottom">
-        <div class="gallery">
-          <ul>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-02/gallery/image-01.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-02/gallery/image-02.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-02/gallery/image-03.png" alt=""></a></li>
-          </ul>
+      <div class="s-video__cover"></div>
+
+      <div class="s-main-content s-spiderman-02-02">
+        <div class="s-main-content__top">
+          <div class="s-description">
+            <div class="pills">
+              <ul>
+                <li>Ano: 2014</li>
+                <li>Diretor: Marc Webb</li>
+              </ul>
+            </div>
+
+            <div class="s-desctiption__text">
+              <p>
+                <strong>Sinopse:</strong> Em O Espetacular Homem-Aranha 2, Peter
+                Parker (Andrew Garfield) adora ser o Homem-Aranha, por mais que
+                ser o herói aracnídeo o coloque em situações bem complicadas,
+                especialmente com sua namorada Gwen Stacy (Emma Stone) e sua tia
+                May (Sally Field). Apesar disto, ele equilibra suas várias
+                facetas da forma que pode. No momento, Peter está mais
+                preocupado é com o fantasma da promessa feita ao pai de Gwen, de
+                que se afastaria dela para protegê-la. Ao mesmo tempo ele
+                precisa lidar com o retorno de um velho amigo, Harry Osborn
+                (Dane DeHaan), e o surgimento de um vilão poderoso: Electro
+                (Jamie Foxx).
+              </p>
+            </div>
+          </div>
+
+          <div class="s-details">
+            <div class="details">
+              <h3>Detalhes</h3>
+              <h4 class="movie-name">O Espetacular Homem-Aranha 2</h4>
+              <p class="movie-infos">
+                The Amazing Spider-Man 2: Rise of Electro ou O Espetacular
+                Homem-Aranha 2: A Ameaça de é um filme estadunidense de 2014,
+                baseado no personagem Homem-Aranha da Marvel Comics. O filme foi
+                dirigido por Marc Webb, produzido por Avi Arad e Matt Tolmach,
+                com roteiro de Alex Kurtzman, Roberto Orci, Jeff Pinkner e James
+                Vanderbilt. É o quinto filme do Homem-Aranha produzido pela
+                Columbia Pictures e Marvel Entertainment, sequencia de The
+                Amazing Spider-Man (2012), e o último filme da série The Amazing
+                Spider-Man. O filme é estrelado por Andrew Garfield como Peter
+                Parker / Homem-Aranha, ao lado de Emma Stone, Jamie Foxx, Dane
+                DeHaan, Campbell Scott, Embeth Davidtz, Colm Feore, Paul
+                Giamatti e Sally Field. No filme, Peter Parker tenta proteger
+                Gwen Stacy enquanto investiga a morte de seus pais, enquanto
+                também lida com o super vilão Electro e o retorno de seu amigo
+                de infância Harry Osborn, que está morrendo de uma doença
+                genética mortal.
+              </p>
+            </div>
+            <div class="movie-details" id="details">
+              <div class="detail">
+                <span class="duration">Duração: 2h 22min</span>
+                <br />
+                <span class="release-date">Data de Lançamento: 2014</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-movie-list">
+            <h3>Elenco</h3>
+            <ul style="gap: 55px">
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-03/actors/andrew-garfield.jpg"
+                  alt="Jake Gyllenhaal"
+                /><span class="actor-name">Andrew Garfield</span>
+                <span class="actor-character">
+                  Peter Parker/ Homem-Aranha
+                </span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-andrew/movie-01/actors/emma-stone.jpg"
+                  alt="Emma Stone"
+                /><span class="actor-name">Emma Stone</span>
+                <span class="actor-character">Gwen Stacy</span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-andrew/movie-02/actors/jamie-foxx.jpg"
+                  alt="Jamie Foxx"
+                /><span class="actor-name">Jamie Foxx</span>
+                <span class="actor-character"> Max Dillon / Electro</span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-andrew/movie-02/actors/dane-deHaan.jpg"
+                  alt="Dane DeHaan"
+                /><span class="actor-name">Dane DeHaan</span>
+                <span class="actor-character">Harry Osborn</span>
+              </li>
+            </ul>
+            <img
+              src="../../assets/images/spiderman-andrew/movie-01/gallery/list-bg.png"
+              alt="Spider Man"
+              class="list-background"
+            />
+          </div>
+
+          <div class="s-main-content__bottom">
+            <div class="gallery">
+              <h4>Galeria</h4>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-andrew/movie-02/gallery/image-01.png"
+                    ><img
+                      src="../../assets/images/spiderman-andrew/movie-02/gallery/image-01.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-andrew/movie-02/gallery/image-0.png"
+                    ><img
+                      src="../../assets/images/spiderman-andrew/movie-02/gallery/image-02.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-andrew/movie-02/gallery/image-03.png"
+                    ><img
+                      src="../../assets/images/spiderman-andrew/movie-02/gallery/image-03.png"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+
+    <footer class="s-footer">
+      <p>
+        <img src="../../assets/images/icons/warnning.svg" alt="" /> Este site
+        foi desenvolvidos apenas para fins experimentais, todos os direito são
+        da marca oficial <br />
+        (This site has been developed for experimental purposes only, all rights
+        are the official trademark.)
+      </p>
+      <div class="contact">
+        <div class="me">
+          <span class="name">Dev: João Marcos</span>
+          <a class="mail" href="mailto:jmmsp2003@hotmail.com"
+            >Email: jmmsp2003@hotmail.com</a
+          >
+        </div>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/joão-marcos-525564226/"
+            target="_blank"
+          >
+            <img
+              src="../../assets/images/icons/linkedin.svg"
+              alt="linkedin link to"
+            />
+            Linkedin
+          </a>
+          <a href="https://github.com/Joaommsp" target="_blank">
+            <img
+              src="../../assets/images/icons/github.svg"
+              alt="github link to"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+  </body>
 </html>

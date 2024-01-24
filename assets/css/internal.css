@@ -1,21 +1,22 @@
-@import url('reset.css');
-@import url('global.css');
-@import url('components/_navigator.css');
-@import url('components/_pills.css');
-@import url('components/_link-button.css');
-@import url('components/_gallery.css');
+@import url("/assets/css/reset.css");
+@import url("/assets/css/global.css");
+@import url("components/_navigator.css");
+@import url("components/_pills.css");
+@import url("components/_link-button.css");
+@import url("components/_gallery.css");
+@import url("components/_menu.css");
+@import url("components/_classification.css");
+@import url("components/_details.css");
+@import url("components/_footer.css");
+@import url("components/_list.css");
 
 .s-wrapper {
-  display: flex;
-  height: 100vh;
-  flex-flow: row nowrap; 
-  background-color: aqua; 
-}
-
-.s-wrapper video{
-  position: fixed;
   width: 100%;
-
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  overflow: hidden;
 }
 
 .s-wrapper .s-left-column {
@@ -25,76 +26,268 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  padding-right: 50px;
+  padding-right: 2rem;
   left: 0;
   top: 0;
   z-index: 1;
 }
 
-.s-wrapper .s-main-content{
+.s-wrapper .s-main-content {
   height: 100%;
   width: 100%;
-  padding-left: 130px;
-  position: relative;
+  background-color: #0f0f0f;
+  transition: 0.5s ease;
 }
 
 .s-wrapper .s-main-content__top {
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.s-wrapper .s-main-content__bottom{
-  height: 20vh;
+.s-main-content__bottom {
+  margin-top: 2rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
 }
 
-.s-wrapper .s-main-content .s-logo img{
-  margin-top: 50px;
+.s-video {
+  position: relative;
+  width: 100%;
+  height: 556px;
+  background-color: #000000;
+}
+
+.s-video .s-logo {
+  position: absolute;
+  left: 10rem;
+  bottom: 8rem;
+  margin-top: 1rem;
   margin-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
+  z-index: 5;
 }
 
-.s-wrapper .s-main-content__top .s-description{
-  background-color: rgba(0,0,0,.7);
-  max-width: 50%;
-  padding: 20px;
-  border-radius: 10px;
+.s-video .s-logo img {
+  width: 300px;
 }
 
-.s-wrapper .s-main-content__top .s-description .s-description__text p{
-  color: white;
+.s-video__container {
+  user-select: none;
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  height: 556px;
+  background-color: #000000;
+}
+
+.s-video__container video {
+  width: 100%;
+  height: 556px;
+  position: relative;
+}
+
+.s-video__cover {
+  position: absolute;
+  width: 100%;
+  height: 620px;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(9, 9, 121, 0) 11%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.s-main-content__top {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.004) 50%,
+    rgba(0, 0, 0, 0.132) 100%
+  );
+}
+
+.s-main-content__top .s-description {
+  margin-top: 3rem;
+  max-width: 100%;
+  padding: 2rem 10rem;
+  text-align: center;
+}
+
+.s-main-content__top .s-description .s-description__text p {
+  color: #ffffff;
   line-height: 170%;
 }
 
-.s-wrapper .s-main-content__top .s-description .pills{
-  margin-bottom: 20px;
+.s-main-content__top > .s-description > .pills {
+  margin-bottom: 1.5rem;
 }
 
-.s-wrapper .s-main-content .s-links{
-  padding: 20px;
+.s-links {
+  position: absolute;
+  left: 10rem;
+  bottom: 2rem;
+  padding: 1.5rem;
   padding-left: 0;
+  z-index: 10;
 }
 
-.s-wrapper .s-main-content .s-links ul{
+.s-links ul {
   display: flex;
   flex-direction: row;
 }
 
 .s-spiderman-01-01 {
-  background-image: url('../images/spiderman-tobey/movie-01/background.png');
-  background-size:cover;
+  background-image: url("../images/spiderman-tobey/movie-01/background.jpg");
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  background-size: cover;
 }
 
 .s-spiderman-01-02 {
-  background-image: url('../images/spiderman-tobey/movie-02/background.png');
+  background-image: url("../images/spiderman-tobey/movie-02/background.jpg");
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
   background-size: cover;
 }
 
 .s-spiderman-01-03 {
-  background-image: url('../images/spiderman-tobey/movie-03/background.png');
+  background-image: url("../images/spiderman-tobey/movie-03/background.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-02-01 {
+  background-image: url("../images/spiderman-andrew/movie-01/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-02-02 {
+  background-image: url("../images/spiderman-andrew/movie-02/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-03-01 {
+  background-image: url("../images/spiderman-tom/movie-01/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-03-02 {
+  background-image: url("../images/spiderman-tom/movie-02/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-03-03 {
+  background-image: url("../images/spiderman-tom/movie-03/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-04-01 {
+  background-image: url("../images/spiderman-miles/movie-01/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.s-spiderman-04-02 {
+  background-image: url("../images/spiderman-miles/movie-02/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .s-wrapper .s-left-column {
+    width: 50px;
+    position: fixed;
+    padding-right: 0rem;
+    left: 0;
+    top: 5rem;
+  }
+
+  .s-video {
+    width: 100%;
+  }
+
+  .s-video .s-logo {
+    left: 3rem;
+  }
+
+  .s-video .s-logo img {
+    width: 100px;
+  }
+
+  .s-links {
+    left: 3rem;
+    bottom: 4rem;
+  }
+
+  .s-main-content__top .s-description {
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .s-wrapper .s-left-column {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 4.1rem;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .s-wrapper .s-left-column {
+    width: 50px;
+    position: fixed;
+    padding-right: 0rem;
+    left: 0;
+    top: 5rem;
+  }
+
+  .s-video {
+    width: 100%;
+  }
+
+  .s-video .s-logo {
+    left: 5rem;
+  }
+
+  .s-video .s-logo img {
+    width: 200px;
+  }
+
+  .s-links {
+    left: 5rem;
+  }
+
+  .s-main-content__top .s-description {
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 5rem;
+    text-align: center;
+  }
 }

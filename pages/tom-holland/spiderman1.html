@@ -1,87 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spider Man | Multiverso</title>
-  <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
-</head>
+    <link rel="stylesheet" href="/assets/css/internal.css" />
 
-<body>
-  <div class="s-wrapper">
-    <video autoplay loop>
-      <source src="../../assets/videos/spiderman-2017-trailer.mp4" type="video/mp4" />
-    </video>
-    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
-    <div class="s-left-column">
-      <nav class="navigator">
-        <div class="navigator__icon">
-          <a href="../../index.html">
-            <img src="../../assets/images/icons/spiderman1-tom.png" />
-          </a>
+    <!-- bootStrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+    <title>Spider-Man SpiderVerse</title>
+  </head>
+  <body>
+    <div class="s-wrapper">
+      <nav class="menu">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link"><a href="../../index.html">Home</a></li>
+            <li class="nav-link">
+              <a
+                href="https://www.linkedin.com/in/joão-marcos-525564226/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-logo">
+              <img src="../../assets/images/icons/spider.svg" alt="" />
+            </li>
+            <li class="nav-link">
+              <a href="https://github.com/Joaommsp" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://github.com/Joaommsp/Spider-man_SpiderVerse"
+                target="_blank"
+                >Repositório</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="#01" class="active">01</a></li>
-          <li><a href="spiderman2.html">02</a></li>
-          <li><a href="spiderman3.html">03</a></li>
-        </ul>
       </nav>
-    </div>
-    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
 
-    <div class="s-main-content">
-      <div class="s-main-content__top">
+      <div class="s-video">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-tom/movie-01/logo.png" alt="Spiderman (2002)"
-            title="Spiderman (2002)" />
+          <img
+            src="/assets/images/spiderman-tom/movie-01/logo.png"
+            alt="Spider-Man (2017)"
+            title="Spider-Man (2017)"
+          />
         </div>
 
-        <div class="s-description">
-          <div class="pills">
+        <aside class="s-left-column">
+          <nav class="navigator">
+            <div class="navigator-icon">
+              <a href="../../index.html">
+                <img src="/assets/images/icons/spiderman1.png" alt="" />
+              </a>
+            </div>
             <ul>
-              <li>Ano: 2002</li>
-              <li>Diretor: Sam Raimi</li>
+              <li><a href="../tom-holland/spiderman1.html">01</a></li>
+              <li><a href="../tom-holland/spiderman2.html">02</a></li>
+              <li><a href="../tom-holland/spiderman3.html">03</a></li>
             </ul>
-          </div>
-          <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Depois de ser picado por uma aranha geneticamente modificada em uma
-              demonstração científica, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los
-              para para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém,
-              ao presenciar o assassinando de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes
-              para proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio o psicótico
-              Duende Verde.</p>
-          </div>
+          </nav>
+        </aside>
+
+        <div class="s-classification">
+          <img src="../../assets/classifications/12.png" alt="" />
         </div>
 
         <div class="s-links">
           <ul>
             <li>
-              <a href="https://www.youtube.com/watch?v=TYMMOjBUPMM" class="link-button" target="_blank">
-                <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
-                </span>
-                <span class="label">
-                  Assistir trailer
-                </span>
+              <a
+                href="https://www.youtube.com/watch?v=2x-2iYxgMFU&pp=ygUkaG9tZW0gYXJhbmhhIGRlIHZvbHRhIGFvIGxhciB0cmFpbGVy"
+                class="link-button"
+                target="_blank"
+              >
+                <img src="../../assets/images/icons/play.svg" alt="" />
+                <span class="label"> Assistir trailer </span>
+              </a>
+            </li>
+            <li>
+              <a href="#details" class="info-button">
+                <img src="../../assets/images/icons/info.svg" alt="" />
+                <span class="label"> Mais Informações </span>
               </a>
             </li>
           </ul>
         </div>
+
+        <div class="s-video__container">
+          <video
+            autoplay
+            loop
+            muted
+            src="../../assets/videos/spiderman-2017-trailer.mp4"
+          ></video>
+        </div>
       </div>
 
-      <div class="s-main-content__bottom">
-        <div class="gallery">
-          <ul>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-01.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-02.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-03.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-04.png" alt=""></a></li>
-          </ul>
+      <div class="s-video__cover"></div>
+
+      <div class="s-main-content s-spiderman-03-01">
+        <div class="s-main-content__top">
+          <div class="s-description">
+            <div class="pills">
+              <ul>
+                <li>Ano: 2017</li>
+                <li>Diretor: Jon Watts</li>
+              </ul>
+            </div>
+
+            <div class="s-desctiption__text">
+              <p>
+                <strong>Sinopse:</strong> Em Homem-Aranha: De Volta ao Lar,
+                depois de atuar ao lado dos Vingadores, chegou a hora de Peter
+                Parker (Tom Holland) voltar para casa e para a sua vida, já não
+                mais tão normal. Lutando diariamente contra pequenos crimes nas
+                redondezas, ele pensa ter encontrado a missão de sua vida quando
+                o terrível vilão Abutre (Michael Keaton) surge amedrontando a
+                cidade. O problema é que a tarefa não será tão fácil como ele
+                imaginava.
+              </p>
+            </div>
+          </div>
+
+          <div class="s-details">
+            <div class="details">
+              <h3>Detalhes</h3>
+              <h4 class="movie-name">Homem-Aranha: de volta ao lar</h4>
+              <p class="movie-infos">
+                Spider-Man: Homecoming é um filme estadunidense de super-herói
+                de 2017, baseado no personagem Homem Aranha da Marvel Comics,
+                coproduzido pela Columbia Pictures e Marvel Studios e
+                distribuído pela Sony Pictures Releasing. É o segundo reboot do
+                Homem-Aranha no cinema e o décimo sexto filme do Universo
+                Cinematográfico Marvel. O filme é dirigido por Jon Watts, com um
+                roteiro de Jonathan Goldstein e John Francis Daley, Watts e
+                Christopher Ford, e Chris McKenna e Erik Sommers.
+              </p>
+            </div>
+            <div class="movie-details" id="details">
+              <div class="detail">
+                <span class="duration">Duração: 2h 13min</span>
+                <br />
+                <span class="release-date">Data de Lançamento: 2017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-movie-list">
+            <h3>Elenco</h3>
+            <ul style="gap: 55px;">
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-01/actors/tom-holland.PNG"
+                  alt="Tom Holland"
+                /><span class="actor-name">Tom Holland</span>
+                <span class="actor-character">
+                  Peter Parker/ Homem-Aranha</span
+                >
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-01/actors/michael-keaton.jpg"
+                  alt="Michael Keaton"
+                /><span class="actor-name">Michael Keaton</span>
+                <span class="actor-character">
+                  Adrian Toomes / Abutre
+                </span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-01/actors/Robert-Downey-Jr.jpg"
+                  alt="Robert Downey Jr."
+                /><span class="actor-name">Robert Downey Jr.</span>
+                <span class="actor-character"> Tony Stark / Homem de Ferro </span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-01/actors/zendaya.jpg"
+                  alt="Zendaya"
+                /><span class="actor-name">Zendaya</span>
+                <span class="actor-character"> MJ </span>
+              </li>
+            </ul>
+            <img
+              src="../../assets/images/spiderman-tom/movie-01/gallery/list-bg.png"
+              alt="Spider Man"
+              class="list-background"
+            />
+          </div>
+
+          <div class="s-main-content__bottom">
+            <div class="gallery">
+              <h4>Galeria</h4>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tom/movie-01/gallery/image-01.png"
+                    ><img
+                      src="../../assets/images/spiderman-tom/movie-01/gallery/image-01.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tom/movie-01/gallery/image-02.png"
+                    ><img
+                      src="../../assets/images/spiderman-tom/movie-01/gallery/image-02.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tom/movie-01/gallery/image-03.png"
+                    ><img
+                      src="../../assets/images/spiderman-tom/movie-01/gallery/image-03.png"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+
+    <footer class="s-footer">
+      <p>
+        <img src="../../assets/images/icons/warnning.svg" alt="" /> Este site
+        foi desenvolvidos apenas para fins experimentais, todos os direito são
+        da marca oficial <br />
+        (This site has been developed for experimental purposes only, all rights
+        are the official trademark.)
+      </p>
+      <div class="contact">
+        <div class="me">
+          <span class="name">Dev: João Marcos</span>
+          <a class="mail" href="mailto:jmmsp2003@hotmail.com"
+            >Email: jmmsp2003@hotmail.com</a
+          >
+        </div>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/joão-marcos-525564226/"
+            target="_blank"
+          >
+            <img
+              src="../../assets/images/icons/linkedin.svg"
+              alt="linkedin link to"
+            />
+            Linkedin
+          </a>
+          <a href="https://github.com/Joaommsp" target="_blank">
+            <img
+              src="../../assets/images/icons/github.svg"
+              alt="github link to"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+  </body>
 </html>

@@ -1,3 +1,3 @@
 # Pages
 
-## Spiderman (Tom Holland)
+## Spiderman (Tobey Maguire)

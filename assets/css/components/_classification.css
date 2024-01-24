@@ -1,0 +1,40 @@
+.s-classification {
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  height: fit-content;
+  background-color: #00000042;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  bottom: 3rem;
+  padding: 1rem;
+}
+
+.s-classification img {
+  width: 46px;
+}
+
+@media only screen and (max-width: 767px) {
+  .s-classification {
+    width: 56px;
+    bottom: 9.5rem;
+    padding: 0.5rem;
+  }
+
+  .s-classification img {
+    width: 26px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .s-classification {
+    width: 56px;
+    bottom: 9.5rem;
+    padding: 0.5rem;
+  }
+
+  .s-classification img {
+    width: 26px;
+  }
+}

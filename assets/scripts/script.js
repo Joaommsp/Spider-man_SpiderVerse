@@ -1,36 +1,55 @@
-function handleMouseEnter() {
-  this.classList.add('s-card--hovered');
-  document.body.id = `${this.id}-hovered`;
-}
+let controller = document.querySelectorAll(".s-controller__button");
+let cards = document.querySelectorAll(".s-card");
 
-function handleMouseLeave() {
-  this.classList.remove('s-card--hovered');
-  document.body.id = '';
-}
+controller.forEach((btn) => {
+  btn.addEventListener("click", () => {
 
-function addEventListenersToCards() {
-  const cardElements = document.getElementsByClassName('s-card');
-  
-  for (let index = 0; index < cardElements.length; index++) {
-    const card = cardElements[index];
-    card.addEventListener('mouseenter', handleMouseEnter);
-    card.addEventListener('mouseleave', handleMouseLeave);
-  }
-}
+    selectCarouselitem(btn);
 
-document.addEventListener("DOMContentLoaded", addEventListenersToCards, false);
+    if (btn.id == 3) {
+      let move = setInterval(() => {
+        cards[0].classList.add("card-botton");
+        cards[3].classList.remove("card-botton");
+        console.log("wefwef");
+        clearInterval(move);
+      }, 200);
+    }
+    if (btn.id == 1) {
+     let move = setInterval(() => {
+      cards[0].classList.remove("card-botton");
+      cards[3].classList.add("card-botton");
+      clearInterval(move)
+     }, 200);
+    }
+    if (btn.id == 4) {
+      cards[0].classList.add("card-botton");
+      cards[3].classList.remove("card-botton");
+    }
+    if (btn.id == 2) {
+      let move = setInterval(() => {
+        cards[0].classList.remove("card-botton");
+        cards[3].classList.add("card-botton");
+        clearInterval(move)
+      }, 200);
+    }
+  });
+});
 
-function selectCarouselItem(selectedButtonElement) {
-  const selectedItem = selectedButtonElement.id;
-  const carousel = document.querySelector('.s-cards-carousel');
+function selectCarouselitem(selectedBtnElement) {
+  const selectedItem = selectedBtnElement.id;
+
+  const carousel = document.querySelector(".s-cards-carousel");
   const transform = carousel.style.transform;
   const rotateY = transform.match(/rotateY\((-?\d+deg)\)/i);
-  const rotateYDeg = -120 * (Number(selectedItem) - 1);
-  const newTransform = transform.replace(rotateY[0], `rotateY(${rotateYDeg}deg)`);
+  const rotateYdeg = -120 * (Number(selectedItem) - 1);
+  const newTrasform = transform.replace(
+    rotateY[0],
+    `rotateY(${rotateYdeg}deg)`
+  );
 
-  carousel.style.transform = newTransform;
+  carousel.style.transform = newTrasform;
 
-  const activeButtonElement = document.querySelector('.s-controller__button--active');
-  activeButtonElement.classList.remove('s-controller__button--active');
-  selectedButtonElement.classList.add('s-controller__button--active');
+  const selectedBtn = document.querySelector('.s-controller__button--active')
+  selectedBtn.classList.remove('s-controller__button--active')
+  selectedBtnElement.classList.add('s-controller__button--active')
 }

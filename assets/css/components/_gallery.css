@@ -1,22 +1,114 @@
 .gallery {
-  padding: 20px;
-  padding-left: 0;
+  height: 100%;
+  margin-bottom: 10rem;
+  position: relative;
 }
 
-.gallery ul{
+.gallery h4 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f8edff;
+}
+
+.gallery ul {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
 
-.gallery ul li{
-  margin-left: 25px;
+.gallery ul li {
+  margin-left: 3rem;
+  z-index: 5;
 }
 
-.gallery ul li:first-child{
+.gallery ul li:first-child {
   margin-left: 0px;
+  width: 100%;
 }
 
-.gallery ul li a img{
-  border:solid 6px white;
-  border-radius: 15px;
+.gallery ul li a img {
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 0.6px rgba(0, 0, 0, 0.26),
+    0px 0px 2px rgba(0, 0, 0, 0.155), 0px 0px 9px rgba(0, 0, 0, 0.105);
+  z-index: 5;
+}
+
+.gallery ul li a img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-background {
+  width: 500px;
+  position: absolute;
+  top: -6rem;
+  left: -30rem;
+  z-index: 0;
+  filter: drop-shadow(-36px 22px 8px #000000);
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery ul li a img {
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .gallery ul li {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-background {
+    width: 500px;
+    position: absolute;
+    top: 10rem;
+    left: -25rem;
+    z-index: 0;
+    filter: drop-shadow(-36px 22px 8px #000000);
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .gallery ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery ul li a img {
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .gallery ul li {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-background {
+    width: 500px;
+    position: absolute;
+    top: 10rem;
+    left: -30rem;
+    z-index: 0;
+    filter: drop-shadow(-36px 22px 8px #000000);
+  }
+
 }

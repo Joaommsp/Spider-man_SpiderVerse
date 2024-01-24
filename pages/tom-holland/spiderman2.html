@@ -1,82 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spider Man | Multiverso</title>
-  <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
-</head>
+    <link rel="stylesheet" href="/assets/css/internal.css" />
 
-<body>
-  <div class="s-wrapper">
-    <video autoplay loop>
-      <source src="../../assets/videos/spiderman2-2019-trailer.mp4" type="video/mp4" />
-    </video>
-    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
-    <div class="s-left-column">
-      <nav class="navigator">
-        <div class="navigator__icon">
-          <a href="../../index.html">
-            <img src="../../assets/images/icons/spiderman1-tom.png" />
-          </a>
+    <!-- bootStrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+    <title>Spider-Man SpiderVerse</title>
+  </head>
+  <body>
+    <div class="s-wrapper">
+      <nav class="menu">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link"><a href="../../index.html">Home</a></li>
+            <li class="nav-link">
+              <a
+                href="https://www.linkedin.com/in/joão-marcos-525564226/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-logo">
+              <img src="../../assets/images/icons/spider.svg" alt="" />
+            </li>
+            <li class="nav-link">
+              <a href="https://github.com/Joaommsp" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://github.com/Joaommsp/Spider-man_SpiderVerse"
+                target="_blank"
+                >Repositório</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="spiderman1.html">01</a></li>
-          <li><a href="#02" class="active">02</a></li>
-          <li><a href="spiderman3.html">03</a></li>
-        </ul>
       </nav>
-    </div>
-    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
 
-    <div class="s-main-content">
-      <div class="s-main-content__top">
+      <div class="s-video">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-tom/movie-02/logo.png" alt="Spiderman 2 (2005)"
-            title="Spiderman 2 (2005)" />
+          <img
+            src="/assets/images/spiderman-tom/movie-02/logo.png"
+            alt="Spider-Man (2019)"
+            title="Spider-Man (2019)"
+          />
         </div>
 
-        <div class="s-description">
-          <div class="pills">
+        <aside class="s-left-column">
+          <nav class="navigator">
+            <div class="navigator-icon">
+              <a href="../../index.html">
+                <img src="/assets/images/icons/spiderman1.png" alt="" />
+              </a>
+            </div>
             <ul>
-              <li>Ano: 2005</li>
-              <li>Diretor: Sam Raimi</li>
+              <li><a href="../tom-holland/spiderman1.html">01</a></li>
+              <li><a href="../tom-holland/spiderman2.html">02</a></li>
+              <li><a href="../tom-holland/spiderman3.html">03</a></li>
             </ul>
-          </div>
-          <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Quando uma falha na experiência de fusão nuclear resulta em uma explosão que mata sua esposa, o Dr. Otto Octavius é transformado em Dr. Octopus, um ciborgue com tentáculos de metal. Doc Ock culpa o Homem-Aranha pelo acidente e quer vingança. Enquanto isso, o alter ego do herói, Peter Parker, perde seus poderes. Para complicar as coisas, o seu melhor amigo odeia o Homem-Aranha e sua amada fica noiva..</p>
-          </div>
+          </nav>
+        </aside>
+
+        <div class="s-classification">
+          <img src="../../assets/classifications/12.png" alt="" />
         </div>
 
         <div class="s-links">
           <ul>
             <li>
-              <a href="#" class="link-button">
-                <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
-                </span>
-                <span class="label">
-                  Assistir trailer
-                </span>
+              <a
+                href="https://www.youtube.com/watch?v=vaw_8DoqXfk&pp=ygUaaG9tZW0gYXJhbmhhIGxvbmdlIGRlIGNhc2E%3D"
+                class="link-button"
+                target="_blank"
+              >
+                <img src="../../assets/images/icons/play.svg" alt="" />
+                <span class="label"> Assistir trailer </span>
+              </a>
+            </li>
+            <li>
+              <a href="#details" class="info-button">
+                <img src="../../assets/images/icons/info.svg" alt="" />
+                <span class="label"> Mais Informações </span>
               </a>
             </li>
           </ul>
         </div>
+
+        <div class="s-video__container">
+          <video
+            autoplay
+            loop
+            muted
+            src="../../assets/videos/spiderman2-2019-trailer.mp4"
+          ></video>
+        </div>
       </div>
 
-      <div class="s-main-content__bottom">
-        <div class="gallery">
-          <ul>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-01.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-02.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-03.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-tom/movie-01/gallery/image-04.png" alt=""></a></li>
-          </ul>
+      <div class="s-video__cover"></div>
+
+      <div class="s-main-content s-spiderman-03-02">
+        <div class="s-main-content__top">
+          <div class="s-description">
+            <div class="pills">
+              <ul>
+                <li>Ano: 2019</li>
+                <li>Diretor: Jon Watts</li>
+              </ul>
+            </div>
+
+            <div class="s-desctiption__text">
+              <p>
+                <strong>Sinopse:</strong> Em Homem-Aranha: Longe de Casa, Peter
+                Parker (Tom Holland) está em uma viagem de duas semanas pela
+                Europa, ao lado de seus amigos de colégio, quando é surpreendido
+                pela visita de Nick Fury (Samuel L. Jackson). Precisando de
+                ajuda para enfrentar monstros nomeados como Elementais, Fury o
+                convoca para lutar ao lado de Mysterio (Jake Gyllenhaal), um
+                novo herói que afirma ter vindo de uma Terra paralela. Além da
+                nova ameaça, Peter precisa lidar com a lacuna deixada por Tony
+                Stark, que deixou para si seu óculos pessoal, com acesso a um
+                sistema de inteligência artificial associado à Stark Industries.
+              </p>
+            </div>
+          </div>
+
+          <div class="s-details">
+            <div class="details">
+              <h3>Detalhes</h3>
+              <h4 class="movie-name">Homem-Aranha: Longe de Casa</h4>
+              <p class="movie-infos">
+                Spider-Man: Far From Home é um filme de super-herói
+                estadunidense de 2019, baseado no personagem Homem-Aranha da
+                Marvel Comics, produzido pela Marvel Studios e Columbia Pictures
+                e distribuído pela Sony Pictures Releasing, sendo a sequência de
+                Spider-Man: Homecoming, de 2017, e o vigésimo terceiro filme do
+                Universo Cinematográfico Marvel. Dirigido por Jon Watts e
+                escrito por Chris McKenna e Erik Sommers, é estrelado por Tom
+                Holland como Peter Parker / Homem-Aranha, ao lado de Samuel L.
+                Jackson, Zendaya, Cobie Smulders, Jon Favreau, J. B. Smoove,
+                Jacob Batalon, Martin Starr, Marisa Tomei e Jake Gyllenhaal. No
+                filme, Parker é recrutado por Nick Fury e Mystério para
+                enfrentar ameaças de outra dimensão enquanto ele está em uma
+                viagem escolar para a Europa.
+              </p>
+            </div>
+            <div class="movie-details" id="details">
+              <div class="detail">
+                <span class="duration">Duração: 2h 10min</span>
+                <br />
+                <span class="release-date">Data de Lançamento: 2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-movie-list">
+            <h3>Elenco</h3>
+            <ul style="gap: 55px">
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-01/actors/tom-holland.PNG"
+                  alt="Tom Holland"
+                /><span class="actor-name">Tom Holland</span>
+                <span class="actor-character"> Peter Parker/ Homem-Aranha</span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-02/actors/jake-gyllenhaal.jpg"
+                  alt="Jake Gyllenhaal"
+                /><span class="actor-name">Jake Gyllenhaal</span>
+                <span class="actor-character">
+                  Quentin Beck / Mysterio
+                </span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-02/actors/samuel-jackson.jpg"
+                  alt="Samuel L. Jackson"
+                /><span class="actor-name">Samuel L. Jackson</span>
+                <span class="actor-character">
+                  Nick Furry
+                </span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-01/actors/zendaya.jpg"
+                  alt="Zendaya"
+                /><span class="actor-name">Zendaya</span>
+                <span class="actor-character"> MJ </span>
+              </li>
+            </ul>
+            <img
+              src="../../assets/images/spiderman-tom/movie-02/gallery/list-bg.png"
+              alt="Spider Man"
+              class="list-background"
+            />
+          </div>
+
+          <div class="s-main-content__bottom">
+            <div class="gallery">
+              <h4>Galeria</h4>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tom/movie-02/gallery/image-01.jpg"
+                    ><img
+                      src="../../assets/images/spiderman-tom/movie-02/gallery/image-01.jpg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tom/movie-02/gallery/image-02.jpg"
+                    ><img
+                      src="../../assets/images/spiderman-tom/movie-02/gallery/image-02.jpg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tom/movie-02/gallery/image-03.jpg"
+                    ><img
+                      src="../../assets/images/spiderman-tom/movie-02/gallery/image-03.jpg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+
+    <footer class="s-footer">
+      <p>
+        <img src="../../assets/images/icons/warnning.svg" alt="" /> Este site
+        foi desenvolvidos apenas para fins experimentais, todos os direito são
+        da marca oficial <br />
+        (This site has been developed for experimental purposes only, all rights
+        are the official trademark.)
+      </p>
+      <div class="contact">
+        <div class="me">
+          <span class="name">Dev: João Marcos</span>
+          <a class="mail" href="mailto:jmmsp2003@hotmail.com"
+            >Email: jmmsp2003@hotmail.com</a
+          >
+        </div>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/joão-marcos-525564226/"
+            target="_blank"
+          >
+            <img
+              src="../../assets/images/icons/linkedin.svg"
+              alt="linkedin link to"
+            />
+            Linkedin
+          </a>
+          <a href="https://github.com/Joaommsp" target="_blank">
+            <img
+              src="../../assets/images/icons/github.svg"
+              alt="github link to"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+  </body>
 </html>

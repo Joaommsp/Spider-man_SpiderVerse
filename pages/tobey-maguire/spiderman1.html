@@ -1,104 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiverso | Spiderman</title>
-  <link href="../../assets/css/internal.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-</head>
-<body>
-  <div class="s-wrapper">
-    
-    <video autoplay loop>
-      <source src="../../assets/videos/spiderman-2002-trailer.mp4" type="video/mp4" />
-    </video>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div class="s-left-column">
-      <nav class="navigator">
-        <div class="navigator__icon">
-          <a href="../../index.html">
-            <img src="../../assets/images/icons/spiderman1.png" />
-          </a>
+    <link rel="stylesheet" href="/assets/css/internal.css" />
+
+    <!-- bootStrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+    <title>Spider-Man SpiderVerse</title>
+  </head>
+  <body>
+    <div class="s-wrapper">
+      <nav class="menu">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link"><a href="../../index.html">Home</a></li>
+            <li class="nav-link">
+              <a
+                href="https://www.linkedin.com/in/joão-marcos-525564226/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-logo">
+              <img src="../../assets/images/icons/spider.svg" alt="" />
+            </li>
+            <li class="nav-link">
+              <a href="https://github.com/Joaommsp" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://github.com/Joaommsp/Spider-man_SpiderVerse"
+                target="_blank"
+                >Repositório</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="#01">01</a></li>
-          <li><a href="spiderman2.html">02</a></li>
-          <li><a href="spiderman3.html">03</a></li>
-        </ul>
       </nav>
-    </div>
 
-
-    <div class="s-main-content">
-      <div class="s-main-content__top">
+      <div class="s-video">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-tobey/movie-01/logo.png" alt="Spiderman (2002)"
-            title="Spiderman (2002)" />
+          <img
+            src="/assets/images/spiderman-tobey/movie-01/logo.png"
+            alt="Spider-Man (2002)"
+            title="Spider-Man (2002)"
+          />
         </div>
 
-        <div class="s-description">
-          <div class="pills">
+        <aside class="s-left-column">
+          <nav class="navigator">
+            <div class="navigator-icon">
+              <a href="../../index.html">
+                <img src="/assets/images/icons/spiderman1.png" alt="" />
+              </a>
+            </div>
             <ul>
-              <li>Ano: 2002</li>
-              <li>Diretor: Sam Raimi</li>
+              <li><a href="../tobey-maguire/spiderman1.html">01</a></li>
+              <li><a href="../tobey-maguire/spiderman2.html">02</a></li>
+              <li><a href="../tobey-maguire/spiderman3.html">03</a></li>
             </ul>
-          </div>
+          </nav>
+        </aside>
 
-          <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Depois de ser picado por uma aranha geneticamente modificada em uma
-              demonstração científica, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los
-              para para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém,
-              ao presenciar o assassinando de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes
-              para proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio o psicótico
-              Duende Verde.</p>
-          </div>
+        <div class="s-classification">
+          <img src="../../assets/classifications/12.png" alt="" />
         </div>
 
         <div class="s-links">
           <ul>
             <li>
-              <a href="https://www.youtube.com/watch?v=TYMMOjBUPMM" class="link-button" target="_blank">
-                <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
-                </span>
-                <span class="label">
-                  Assistir trailer
-                </span>
+              <a
+                href="https://www.youtube.com/watch?v=t06RUxPbp_c&pp=ygUUaG9tZW0gYXJhbmhhIHRyYWlsZXI%3D"
+                class="link-button"
+                target="_blank"
+              >
+                <img src="../../assets/images/icons/play.svg" alt="" />
+                <span class="label"> Assistir trailer </span>
+              </a>
+            </li>
+            <li>
+              <a href="#details" class="info-button">
+                <img src="../../assets/images/icons/info.svg" alt="" />
+                <span class="label"> Mais Informações </span>
               </a>
             </li>
           </ul>
         </div>
 
+        <div class="s-video__container">
+          <video
+            autoplay
+            loop
+            muted
+            src="../../assets/videos/spiderman-2002-trailer.mp4"
+          ></video>
+        </div>
       </div>
 
-      <div class="s-main-content__bottom">
-        <div class="gallery">
-          <ul>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg">
-                <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg">
-                <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg">
-                <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png" alt="">
-              </a>
-            </li>
-          </ul>
+      <div class="s-video__cover"></div>
+
+      <div class="s-main-content s-spiderman-01-01">
+        <div class="s-main-content__top">
+          <div class="s-description">
+            <div class="pills">
+              <ul>
+                <li>Ano: 2002</li>
+                <li>Diretor: Sam Raimi</li>
+              </ul>
+            </div>
+
+            <div class="s-desctiption__text">
+              <p>
+                <strong>Sinopse:</strong>Peter Parker (Tobey Maguire) é um jovem
+                estudioso que vive com seus tios, Ben (Cliff Robertson) e May
+                (Rosemary Harris), desde que seus pais faleceram. Inteligente e
+                com um grande interesse pela ciência, Peter tem dificuldade em
+                se relacionar com seus colegas, por ser tímido e por eles o
+                considerarem um nerd. Até que, em uma demonstração científica,
+                um acidente inesperado faz com que aranha modificada
+                geneticamente pique Peter. A partir de então seu corpo é
+                quimicamente alterado pela picada da aranha, fazendo com que
+                Peter possa escalar paredes e tetos, emitir pelos punhos um
+                fluido ultra-resistente semelhante à uma teia de aranha e passe
+                a ter um "sentido de aranha", que o avisa sempre que há perigo
+                por perto, além de superforça e visão ampliada. Inicialmente
+                Peter pensa em usar seus novos poderes para ganhar dinheiro,
+                adotando o nome de Homem-Aranha e se apresentando em lutas de
+                exibição. Porém, ao permitir que um ladrão fuja por não
+                considerar sua função capturá-lo, o fugitivo acaba assassinando
+                seu tio Ben. A partir de então, Peter decide não mais usar seus
+                poderes para proveito próprio e sim para enfrentar o mal, tendo
+                como seu primeiro grande desafio enfrentar o psicótico Duende
+                Verde (Willem Dafoe), que na verdade é o empresário Norman
+                Osborn após ter sido exposto à um gás experimental que lhe deu
+                uma segunda personalidade e grande força física.
+              </p>
+            </div>
+          </div>
+
+          <div class="s-details">
+            <div class="details">
+              <h3>Detalhes</h3>
+              <h4 class="movie-name">Homem-Aranha</h4>
+              <p class="movie-infos">
+                Homem-Aranha é um filme de super-herói estadunidense de 2002,
+                baseado no personagem homônimo da Marvel Comics criado por Stan
+                Lee e Steve Ditko. Dirigido por Sam Raimi a partir de um roteiro
+                de David Koepp, é a primeira parte da trilogia de filmes
+                Homem-Aranha, produzido pela Columbia Pictures em associação com
+                a Marvel Enterprises e Laura Ziskin Productions, e distribuído
+                pela Sony Pictures Releasing. O filme é estrelado por Tobey
+                Maguire como o personagem titular, ao lado de Willem Dafoe,
+                Kirsten Dunst, James Franco, Cliff Robertson e Rosemary Harris.
+                O filme mostra a história da origem do Homem-Aranha e o início
+                de sua carreira como super-herói. Depois de ser mordido por uma
+                aranha geneticamente modificada, o adolescente Peter Parker
+                desenvolve habilidades sobre-humanas semelhantes às de uma
+                aranha e adota uma identidade de super-herói mascarado para
+                combater o crime e a injustiça na cidade de Nova York,
+                enfrentando o sinistro Duende Verde (interpretado por Dafoe) no
+                processo.
+              </p>
+            </div>
+            <div class="movie-details" id="details">
+              <div class="detail">
+                <span class="duration">Duração: 2h 01min</span>
+                <br />
+                <span class="release-date">Data de Lançamento: 2002</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-movie-list">
+            <h3>Elenco</h3>
+            <ul style="gap: 55px">
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tom/movie-03/actors/tobye-maguire.jpg"
+                  alt="Tobye Maguire"
+                /><span class="actor-name">Tobye Maguire</span>
+                <span class="actor-character">
+                  Peter Parker/ Homem-Aranha
+                </span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tobey/movie-01/actors/kirsten.jpg"
+                  alt="Kirsten Dunst"
+                /><span class="actor-name">Kirsten Dunst</span>
+                <span class="actor-character">Mary Jane</span>
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tobey/movie-01/actors/willem-dafoe.jpg"
+                  alt="willem dafoe"
+                /><span class="actor-name">Willem Dafoe</span>
+                <span class="actor-character">
+                  Duende Verde / Norman Osborn</span
+                >
+              </li>
+              <li class="actor">
+                <img
+                  src="../../assets/images/spiderman-tobey/movie-01/actors/james-franco.jpg"
+                  alt="James Franco"
+                /><span class="actor-name">James Franco</span>
+                <span class="actor-character">Harry Osborn</span>
+              </li>
+            </ul>
+            <img
+              src="../../assets/images/spiderman-tobey/movie-01/gallery/list-bg.png"
+              alt="Spider Man"
+              class="list-background"
+            />
+          </div>
+
+          <div class="s-main-content__bottom">
+            <div class="gallery">
+              <h4>Galeria</h4>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"
+                    ><img
+                      src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg"
+                    ><img
+                      src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg"
+                    ><img
+                      src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script>
-    //  JavaScript will go here
-  </script>
-</body>
+
+    <footer class="s-footer">
+      <p>
+        <img src="../../assets/images/icons/warnning.svg" alt="" /> Este site
+        foi desenvolvidos apenas para fins experimentais, todos os direito são
+        da marca oficial <br />
+        (This site has been developed for experimental purposes only, all rights
+        are the official trademark.)
+      </p>
+      <div class="contact">
+        <div class="me">
+          <span class="name">Dev: João Marcos</span>
+          <a class="mail" href="mailto:jmmsp2003@hotmail.com"
+            >Email: jmmsp2003@hotmail.com</a
+          >
+        </div>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/joão-marcos-525564226/"
+            target="_blank"
+          >
+            <img
+              src="../../assets/images/icons/linkedin.svg"
+              alt="linkedin link to"
+            />
+            Linkedin
+          </a>
+          <a href="https://github.com/Joaommsp" target="_blank">
+            <img
+              src="../../assets/images/icons/github.svg"
+              alt="github link to"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+  </body>
 </html>
