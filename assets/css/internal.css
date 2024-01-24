@@ -1,14 +1,15 @@
-@import "../../assets/css/reset.css";
-@import "../../assets/css/global.css";
-@import "./components/_navigator.css";
-@import "./components/_pills.css";
-@import "./components/_link-button.css";
-@import "./components/_gallery.css";
-@import "./components/_menu.css";
-@import "./components/_classification.css";
-@import "./components/_details.css";
-@import "./components/_footer.css";
-@import "./components/_list.css";
+@import url("assets/css/reset.css");
+@import "assets/css/global.css";
+@import "assets/css/components/_navigator.css";
+@import "assets/css/components/_pills.css";
+@import "assets/css/components/_link-button.css";
+@import "assets/css/components/_gallery.css";
+@import "assets/css/components/_menu.css";
+@import "assets/css/components/_classification.css";
+@import "assets/css/components/_details.css";
+@import "assets/css/components/_footer.css";
+@import "assets/css/components/_list.css";
+@import url();
 
 .s-wrapper {
   width: 100%;
