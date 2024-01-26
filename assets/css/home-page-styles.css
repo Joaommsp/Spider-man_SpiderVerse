@@ -267,7 +267,7 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
 
   .s-card {
     border: 0.2rem solid #ffffff;
-    width: 155%;
+    width: 250px;
     height: 60vh;
     position: absolute;
     transition: filter 0.5s ease-in-out;
